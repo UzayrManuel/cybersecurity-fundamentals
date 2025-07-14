@@ -1,4 +1,8 @@
 # 🧱 The Hacker Methodology
+---
+**The Hacker Methodology** is a structured approach used by ethical hackers and penetration testers to assess the security of systems, networks, or applications.
+
+It outlines the logical steps taken to simulate real-world attacks — from gathering information to gaining access and escalating privileges, all the way to covering tracks and reporting.
 
 ---
 
