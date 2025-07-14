@@ -138,3 +138,58 @@ The **hardware level** — this layer sends raw bits (0s and 1s) as electrical, 
 > **A**ll **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing  
 > *(Application, Presentation, Session, Transport, Network, Data Link, Physical)*
 
+---
+
+## 📦 Encapsulation & De-Encapsulation
+
+As data moves **down the OSI layers** (from Application to Physical), each layer **adds its own header** (and sometimes a trailer) to the data. This is called **encapsulation**.
+
+Each header contains information relevant to that layer. For example:
+
+- The **Network Layer** adds IP addresses (source and destination)
+- The **Transport Layer** adds source and destination **port numbers**
+- The **Data Link Layer** adds a **MAC address header** and an **error-checking trailer**
+
+The **Physical Layer** finally converts everything into bits for transmission.
+
+🧠 This layered packaging ensures that each layer on the receiving end knows how to process its corresponding data.
+
+---
+
+### 🧱 Data Naming Through Encapsulation
+
+| OSI Layer         | Name of Data Unit   |
+|------------------|---------------------|
+| Application (7)   | Data                |
+| Presentation (6)  | Data                |
+| Session (5)       | Data                |
+| Transport (4)     | Segment (TCP) / Datagram (UDP) |
+| Network (3)       | Packet              |
+| Data Link (2)     | Frame               |
+| Physical (1)      | Bits                |
+
+---
+
+### 🔄 What Happens at the Receiver's Side?
+
+As the data reaches the destination device, it goes **up the OSI layers**, and each layer **removes** its corresponding header. This process is called **de-encapsulation**.
+
+- Physical → bits are received  
+- Data Link → frame is extracted and checked  
+- Network → IP header is read  
+- Transport → segments are reordered  
+- Session → session is confirmed  
+- Presentation → data is decrypted/formatted  
+- Application → data is delivered to the app
+
+---
+
+### ✅ Why Encapsulation Matters
+
+- Provides a **standardized method** for communication
+- Ensures data can be interpreted across different systems and platforms
+- Makes networks **interoperable**, regardless of OS, hardware, or vendor
+- Helps isolate and troubleshoot problems by clearly separating responsibilities between layers
+
+---
+
