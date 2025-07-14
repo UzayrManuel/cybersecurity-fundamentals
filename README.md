@@ -9,7 +9,7 @@ This repository contains my notes and summaries of core cybersecurity topics as 
 - 🧱 [The Hacker Methodolgy](hacker-methodology.md)
 - 🔍 [Google Dorking](google-dorking.md)
 - 🐧 [Linux Fundamentals](linux-fundamentals.md)
-- 🌐 [Networking Basics](networking-basics.md)
+- 🌐 [Networking Basics](networking-basics)
 - 🛠️ [Tool Notes (Nmap, Wireshark, etc.)](tool-notes)
 - 🔍 [Testing Scopes](testing-scopes.md)
 
