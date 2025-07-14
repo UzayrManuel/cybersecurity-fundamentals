@@ -1,4 +1,4 @@
-# 🧱 OSI Model (Simplified)
+# 🧱 OSI Model
 
 The **OSI Model** (Open Systems Interconnection) is a 7-layer framework that describes how data moves from one device to another across a network. Each layer has a specific function and passes data to the layer above or below it.
 
